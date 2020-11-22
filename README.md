@@ -11,7 +11,11 @@ Install celery and runserver
 Run celery 
    *******if you on windows 7 or 10********
 >>pip install eventlet
+
 >>celery -A <module> worker -l info -P eventlet  # module here is celery_rabbitmq
+  OR
+  pip install gevent
+  >>celery -A <module> worker -l info -P eventlet  # module here is celery_rabbitmq
    ******* if using linux **********
 >>elery -A <module> worker -l info  #module here is celery_rabbitmq
 
