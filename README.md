@@ -15,9 +15,9 @@ Run celery
 >>celery -A <module> worker -l info -P eventlet  # module here is celery_rabbitmq
   OR
   pip install gevent
-  >>celery -A <module> worker -l info -P eventlet  # module here is celery_rabbitmq
+  >>celery -A <module> worker -l info -P gevent  # module here is celery_rabbitmq
    ******* if using linux **********
->>elery -A <module> worker -l info  #module here is celery_rabbitmq
+>>celery -A <module> worker -l info  #module here is celery_rabbitmq
 
 then you must run the message broker from your choice (rabbitmq,redis,AWS....)here rabbit mq used 
 run rabbitmq using docker 
